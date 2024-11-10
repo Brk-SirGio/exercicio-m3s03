@@ -20,6 +20,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
   });
 
+  //exercicio 6
   it('deve somar corretamente os números e atualizar o resultado', () => {
     component.num1 = 10;
     component.num2 = 5;
@@ -27,6 +28,7 @@ describe('AppComponent', () => {
     expect(component.resultado).toBe(15);
   });
 
+  //exercicio 7
   it('deve atualizar num1 e num2 via ngModel corretamente', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const input1 = compiled.querySelector('input[name="num1"]') as HTMLInputElement;
